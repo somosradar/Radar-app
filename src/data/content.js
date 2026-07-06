@@ -1,23 +1,21 @@
-export const signals=[
-{title:"Dores no corpo",category:"Dor",text:"Dores articulares, musculares ou rigidez podem aparecer em fases de maior sensibilidade, sono ruim, sobrecarga ou mudança de rotina.",help:["Movimento leve","Hidratação","Banho morno","Alongamento suave"],alert:"Procure avaliação se houver dor forte, inchaço importante, febre, perda de força ou piora persistente."},
-{title:"Coração acelerado",category:"Coração",text:"Palpitações podem assustar. Sono ruim, calorões, cafeína e estresse podem aumentar a percepção dos batimentos.",help:["Sente-se","Beba água","Reduza cafeína","Respire lentamente"],alert:"Procure atendimento imediatamente se houver dor forte no peito, desmaio ou falta de ar importante."},
-{title:"Calorão",category:"Calorões",text:"Calorões são relatados por muitas mulheres na perimenopausa e podem estar ligados à regulação de temperatura.",help:["Ambiente fresco","Roupas leves","Água","Observar gatilhos"],alert:"Procure avaliação se forem muito intensos, frequentes ou diferentes do padrão."},
-{title:"Insônia",category:"Sono",text:"O sono pode ficar mais leve e fragmentado. Calorões, suor noturno e estresse podem contribuir.",help:["Evitar telas","Reduzir cafeína à tarde","Quarto fresco","Rotina noturna"],alert:"Procure avaliação se persistir por semanas e afetar sua rotina."},
-{title:"Brain Fog",category:"Cérebro",text:"É a sensação de mente nublada, com dificuldade de foco, lentidão mental e pequenos esquecimentos.",help:["Uma tarefa por vez","Pausas curtas","Listas simples","Priorizar sono"],alert:"Procure avaliação se for intenso, progressivo ou vier com sintomas neurológicos."},
-{title:"Inchaço",category:"Corpo",text:"Inchaço pode variar com ciclo, alimentação, sono, hidratação e rotina.",help:["Hidratação","Reduzir ultraprocessados","Caminhada leve","Observar sal"],alert:"Procure avaliação se houver dor intensa, falta de ar ou inchaço importante e súbito."}
-];
-export const library=[
-{category:"Sono",title:"Por que acordo às 3h da manhã?",body:"Durante a perimenopausa, o sono pode ficar mais leve e fragmentado. Calorões, suor noturno e estresse também podem facilitar despertares."},
-{category:"Dor",title:"Dores articulares podem ter relação com a perimenopausa?",body:"Algumas mulheres relatam mais dores e rigidez nessa fase. Sono ruim, sedentarismo, inflamação e estresse também podem contribuir."},
-{category:"Alimentação",title:"O que comer em dias de dor e cansaço?",body:"Priorize proteína, vegetais, azeite, peixes ricos em ômega-3, castanhas e frutas vermelhas. Recomendação educativa."},
-{category:"Calorões",title:"O que pode piorar calorões?",body:"Álcool, cafeína, ambientes quentes, refeições pesadas e noites mal dormidas podem funcionar como gatilhos para algumas mulheres."},
-{category:"Cérebro",title:"O que é brain fog?",body:"É a sensação de mente nublada: dificuldade de foco, lentidão mental e pequenos esquecimentos."},
-{category:"Segurança",title:"Quando procurar atendimento?",body:"Dor forte no peito, desmaio, falta de ar importante, sintomas neurológicos ou sangramento intenso exigem avaliação imediata."}
+export const protocols={
+recovery:{name:"Recuperação Física",duration:"12 min",description:"Para dias de fadiga, dores ou contexto de recuperação.",script:"Voz lenta. Frase-chave: Hoje seu corpo não precisa provar nada. Ele só precisa recuperar."},
+nervous:{name:"Silenciar o Sistema Nervoso",duration:"14 min",description:"Para ansiedade, irritabilidade e mente acelerada.",script:"Respiração 4/6. Final: Seu corpo entendeu que está seguro agora."},
+sleep:{name:"Preparar o Sono",duration:"10 min",description:"Para sono ruim e despertares noturnos.",script:"Poucas palavras, pausas longas, foco em peso no corpo."},
+heat:{name:"Atravessar o Calorão",duration:"6 min",description:"Para calorões e suor noturno.",script:"Visualização de ar fresco no rosto e pescoço."},
+focus:{name:"Clareza Mental",duration:"8 min",description:"Para brain fog e dificuldade de foco.",script:"Uma tarefa por vez. Apenas o próximo passo."}
+};
+export const signalLibrary=[
+{title:"Acordei gripada",category:"Contexto",body:"Quando há sintomas gripais, febre ou mal-estar, a leitura pode refletir recuperação física e não apenas perimenopausa."},
+{title:"Dores no corpo",category:"Dor",body:"Dores articulares, musculares e rigidez podem aparecer em períodos de baixa recuperação, sono ruim e sobrecarga."},
+{title:"Calorões",category:"Vasomotor",body:"Calorões podem variar com sono, café, álcool, estresse e temperatura ambiente."},
+{title:"Brain fog",category:"Cérebro",body:"Mente nublada pode piorar com sono ruim, excesso de estímulos e cansaço."},
+{title:"Irritabilidade",category:"Humor",body:"Irritabilidade muitas vezes aparece quando o corpo está com baixa recuperação."}
 ];
 export const sosProtocols={
-"Calorão intenso":{first:"Vá para um local fresco e reduza camadas de roupa, se possível.",steps:["Beba água em pequenos goles.","Aplique ar fresco no rosto ou pescoço.","Evite café, álcool e refeição pesada agora."],safety:"Procure avaliação se for muito intenso, persistente ou diferente do seu padrão."},
-"Coração acelerado":{first:"Primeiro, sente-se. Você não precisa resolver tudo ao mesmo tempo.",steps:["Observe se há dor no peito, desmaio ou falta de ar importante.","Afrouxe roupas apertadas.","Beba água em pequenos goles.","Reduza estímulos e evite café agora."],safety:"Procure atendimento imediatamente se houver dor forte no peito, desmaio, falta de ar importante ou sintoma diferente do seu padrão."},
-"Dor no corpo":{first:"Reduza o ritmo e observe onde a dor está mais presente.",steps:["Faça mobilidade leve, sem forçar.","Use calor local se costuma ajudar.","Hidrate-se.","Evite treino pesado hoje."],safety:"Procure avaliação se houver dor forte, inchaço importante, febre, perda de força ou piora persistente."},
-"Insônia":{first:"Mantenha pouca luz. Não transforme a madrugada em uma batalha.",steps:["Evite olhar o relógio repetidamente.","Não pegue o celular por 10 minutos.","Respire lentamente."],safety:"Se isso se repetir por semanas e afetar sua rotina, converse com um profissional."},
-"Crise de choro":{first:"Você não precisa controlar isso agora. Primeiro, acolha o que está sentindo.",steps:["Sente-se em um lugar seguro.","Coloque os pés no chão.","Beba água."],safety:"Procure ajuda imediata se houver sofrimento intenso, desesperança ou pensamentos de autoagressão."}
+"Acordei gripada":{first:"Hoje seu corpo pode estar lidando com recuperação física.",steps:["Priorize hidratação.","Evite treino intenso.","Faça refeições leves e nutritivas.","Observe febre, falta de ar ou piora."],safety:"Procure atendimento se houver febre persistente, falta de ar, dor no peito ou piora importante."},
+"Dor no corpo":{first:"Dor pede escuta, não cobrança.",steps:["Mobilidade leve, sem forçar.","Calor local se ajudar.","Hidratação.","Evite treino pesado hoje."],safety:"Procure avaliação se houver dor forte, inchaço, febre, perda de força ou piora persistente."},
+"Ansiedade":{first:"Seu corpo pode estar em hipervigilância.",steps:["Pés no chão.","Expire mais longo do que inspira.","Solte mandíbula e ombros.","Adie decisões por alguns minutos."],safety:"Procure ajuda imediata se houver desespero intenso ou pensamentos de autoagressão."},
+"Calorão intenso":{first:"Vá para um local mais fresco.",steps:["Beba água em pequenos goles.","Ar fresco no rosto e pescoço.","Evite café e álcool agora."],safety:"Procure avaliação se for muito intenso, persistente ou diferente do padrão."},
+"Insônia":{first:"Não transforme a madrugada em batalha.",steps:["Pouca luz.","Não pegue o celular por 10 minutos.","Evite olhar o relógio.","Respire lento."],safety:"Se isso se repetir por semanas, converse com um profissional."}
 };

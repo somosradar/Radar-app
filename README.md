@@ -1,10 +1,8 @@
-# Radar V2 Demo
+# Radar V3 Demo
 
-Versão demonstrável para apresentação.
+Conversa com o Corpo™, Frequência do Corpo™, Protocolos, Nutrição, SOS e Memória.
 
 ```bash
 npm install
 npm run dev
 ```
-
-Após commit e push no GitHub Desktop, a Vercel publica automaticamente.
