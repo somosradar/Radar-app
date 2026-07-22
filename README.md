@@ -1,18 +1,31 @@
-# Radar 1.0 Comercial
+# Radar Perimenopausa 2.0
 
-Versão focada em mulheres entrando ou vivendo a perimenopausa.
+Aplicativo React/Vite para check-in diário, leitura contextual de sinais e Memória do Corpo.
 
-## Rodar localmente
+## Executar localmente
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Publicação
+## Gerar produção
 
-Substitua os arquivos no repositório local, faça Commit e Push no GitHub Desktop. A Vercel publica automaticamente.
+```bash
+npm run build
+```
 
-## Aviso
+A pasta `dist` contém a versão pronta para publicação.
 
-Esta versão é educacional. Não realiza diagnóstico e não substitui atendimento médico.
+## Principais áreas
+
+- Check-in conversacional
+- Leitura Radar com índice, sinais dominantes e plano do dia
+- Memória do Corpo com gráfico e insights reais do histórico
+- SOS Radar
+- Biblioteca educativa
+- Conversa Radar contextual
+
+## Observação
+
+O conteúdo é educativo e de apoio ao bem-estar. Não realiza diagnóstico nem substitui avaliação profissional.
